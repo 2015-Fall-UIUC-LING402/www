@@ -1,7 +1,7 @@
 ---
 layout: main
 img: hello
-img_link: http://en.wikipedia.org/wiki/Rosetta_Stone
+img_link: https://en.wikipedia.org/wiki/List_of_Hello_world_program_examples
 title: Course Information
 active_tab: main_page 
 ---
