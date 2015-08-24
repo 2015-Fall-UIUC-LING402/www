@@ -23,6 +23,7 @@
     <script type="text/javascript"
       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+    <script src="assets/javascript/sorttable.js"></script>
   </head>
   <body>
     <a class="sr-only" href="#content">Skip to main content</a>
@@ -44,7 +45,8 @@
         </div>
         <nav class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
-            <li id="syllabus"><a href="syllabus.html">Syllabus</a></li>
+            <li id="syllabus"><a href="goals.html">Goals & Outcomes</a></li>
+            <li id="syllabus"><a href="schedule.html">Schedule & Readings</a></li>
           </ul>
         </nav>
       </div>
@@ -56,7 +58,7 @@
         <div class="col-sm-2 hidden-sm hidden-xs">
           {% if page.img_link %}<a href="{{ page.img_link }}">{% endif %} 
           <img src="assets/img/{{ page.img }}.jpg" class="img-responsive img-rounded" alt="{{ page.caption }}" title="{{ page.img_credit }}"/>
-          {% if page.img_link %}</a>{% endif %} 
+          {% if page.img_link %}</a>{% endif %}
           <span class="text-muted"><i>{{ page.caption }}</i></span>
         </div>
         <div class="col-sm-10">

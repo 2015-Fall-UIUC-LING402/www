@@ -3,15 +3,12 @@ layout: main
 img: bruegel_babel
 img_link: http://en.wikipedia.org/wiki/Tower_of_babel
 img_credit: Image by Pieter Brueghel the Elder (1526/1530–1569). Public Domain via Wikimedia Commons.
-caption: The Tower of Babel
 title: Syllabus
 active_tab: syllabus
 ---
 <!--
 <h1 style="text-align:center;">LING 490 — Syllabus</h1>
 -->
-
-<p style="text-align:center;"><strong>Syllabus is subject to change</strong></p>
 
 <h2>Academic Integrity</h2>
 
@@ -25,18 +22,19 @@ Violations of Academic Integrity include, but are not limited to, copying, cheat
 </p>
 
 
-<h2>Grading</h2>
 
-<ul>
-<li><b>Daily Participation</b>: 5%</li>
-<li><b>Daily Quizzes</b>: 5%</li>
-<li><b>Homework Assignments</b>: 70%</li>
-<li><b>Exam(s)</b>: 20%</li>
-</ul>
+<h2>Schedule and Readings</h2>
 
-<p>
-Grades will be assessed on a 10-point fixed letter grade system. <a href="http://en.wikipedia.org/wiki/Grading_on_a_curve">Grading on a curve</a> will <strong>not</strong> be used.
-</p>
+Students are expected to regularly read the <a href="schedule.html">schedule of assigned readings and video lectures</a>. This schedule is subject to change.
+
+
+<h2>Learning Goals & Outcomes</h2>
+
+Students are expected to attend class, attentively read assigned readings, attentively view assigned video lectures, regularly practice the presented tools and techniques, and complete all assigned work.
+
+Students who do so are expected to attain the following <a href="goals.html">learning goals and outcomes</a>. Students are expected to read these goals and outcomes prior to the second day of class.
+
+
 
 <h2>Absences and Late Work Policy</h2>
 
@@ -61,50 +59,19 @@ For some or all homework assignments, the correct solution will be presented to 
 </p>
 
 
-<h2>Schedule and Readings</h2>
 
-<table class="table table-striped"> 
-  <tbody>
-    <tr>
-      <th>Date</th>
-      <th>Topic</th>
-      <th>Readings (<i class="fa fa-info-circle"></i>=optional)</th>
-    </tr>
-    {% for lecture in site.data.syllabus %}
-    <tr>
-      <td>{{ lecture.date | date: "%b %d" }}</td>
-      <td>
-        {% if lecture.slides %}<a href="{{ lecture.slides }}">{{ lecture.title }}</a>
-        {% else %}{{ lecture.title }}{% endif %}
-	{% if lecture.language %}
-	<br/><a href="lin10.html">Language in 10</a>: <a href="{{ lecture.language_slides }}">{{ lecture.language }}</a>
-        {% endif %}
-      </td>
-      <td>
-        {% if lecture.reading %}
-          <ul class="fa-ul">
-          {% for reading in lecture.reading %}
-            <li>
-            {% if reading.grad_level %}<i class="fa-li fa fa-star"> </i>
-            {% elsif reading.optional %}<i class="fa-li fa fa-info-circle"> </i>
-            {% else %}<i class="fa-li fa"> </i> {% endif %}
-            {{ reading.author }},
-            {% if reading.url %}
-            <a href="{{ reading.url }}">{{ reading.title }}</a>
-            {% else %}
-            {{ reading.title }} 
-            {% endif %}
-            {% if reading.pages %}
-            (p. {{ reading.pages }})
-            {% endif %}
-            </li>
-          {% endfor %}
-          </ul>
-        {% endif %}
-      </td>
-    </tr>
-    {% endfor %}
 
-  </tbody>
-</table>
 
+
+<h2>Grading</h2>
+
+<ul>
+<li><b>Daily Participation</b>: 5%</li>
+<li><b>Daily Quizzes</b>: 5%</li>
+<li><b>Homework Assignments</b>: 70%</li>
+<li><b>Exam(s)</b>: 20%</li>
+</ul>
+
+<p>
+Grades will be assessed on a 10-point fixed letter grade system. <a href="http://en.wikipedia.org/wiki/Grading_on_a_curve">Grading on a curve</a> will <strong>not</strong> be used.
+</p>
